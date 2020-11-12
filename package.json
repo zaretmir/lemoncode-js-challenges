@@ -1,0 +1,14 @@
+{
+  "name": "lemoncode-js-challenges",
+  "version": "1.0.0",
+  "description": "Master in Front-End Development by Lemoncode - Module II: Programming Languages - JavaScript Exercices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "zaretmir",
+  "license": "ISC"
+}
