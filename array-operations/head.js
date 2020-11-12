@@ -1,4 +1,4 @@
-const head = ([head, ...array]) => {
+const head = ([head, ]) => {
     return head;
 }
 
