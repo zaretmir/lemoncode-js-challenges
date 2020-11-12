@@ -1,5 +1,3 @@
-const head = ([head, ]) => {
-    return head;
-}
+const head = ([head, ]) => head;
 
 module.exports = head
