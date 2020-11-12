@@ -1,5 +1,3 @@
-const tail = () => {
-    // TBI
-}
+const tail = ([, ...arrayTail]) => arrayTail;
 
 module.exports = tail
