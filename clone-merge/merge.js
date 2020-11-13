@@ -1,5 +1,5 @@
 function merge(primarySource, secondarySource) {
-    // TBI
+    return {...primarySource, ...secondarySource};
 }
 
 module.exports = merge;
