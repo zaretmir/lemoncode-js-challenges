@@ -1,5 +1,5 @@
 function merge(primarySource, secondarySource) {
-    return {...primarySource, ...secondarySource};
+    return {...secondarySource, ...primarySource};
 }
 
 module.exports = merge;
