@@ -1,5 +1,3 @@
-const concatSeveral = () => {
-    // TBI
-}
+const concatSeveral = (...arrays) => arrays.flat();
 
 module.exports = concatSeveral;
