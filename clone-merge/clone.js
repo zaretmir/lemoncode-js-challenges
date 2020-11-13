@@ -1,5 +1,5 @@
 function clone(source) {
-    // TBI
+    return {...source};
 }
 
 module.exports = clone;
