@@ -1,5 +1,5 @@
 function isBookRead(books, titleToSearch) {
-    // TBI
+    return books.some(book => (book.title === titleToSearch && book.isRead));
 }
 
 module.exports = isBookRead;
