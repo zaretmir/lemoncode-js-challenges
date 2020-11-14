@@ -9,7 +9,7 @@ class SlotMachine {
             this._displayWinMessage();
             this._resetCoins();
         } else {
-            // tbi
+            this._displayLoseMessage();
         }
     }
 
@@ -24,6 +24,10 @@ class SlotMachine {
 
     _displayWinMessage() {
         console.log(`Congratulations! You won ${this.coins} coins!`);
+    }
+
+    _displayLoseMessage() {
+        console.log(`Good luck next time!`);
     }
 
     _resetCoins() {
