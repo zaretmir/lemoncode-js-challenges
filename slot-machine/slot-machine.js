@@ -6,7 +6,8 @@ class SlotMachine {
     play() {
         this.coins++;
         if (this._isWinningCombination()) {
-            // tbi
+            this._displayWinMessage();
+            this._resetCoins();
         } else {
             // tbi
         }
@@ -19,6 +20,14 @@ class SlotMachine {
     _getRandomBoolean() {
         const probabilityOfTrue = 0.5;
         return Math.random() < probabilityOfTrue;
+    }
+
+    _displayWinMessage() {
+        console.log(`Congratulations! You won ${this.coins} coins!`);
+    }
+
+    _resetCoins() {
+        this.coins = 0;
     }
 }
 
