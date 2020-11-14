@@ -16,4 +16,16 @@ describe('play', () => {
         machine.play()
         expect(mockIsWinningCombination).toHaveBeenCalledTimes(1);
     })
+
+    it('Logs a winning message and resets coins when we get a winning combination', () => {
+        console.log = jest.fn();
+
+        let mockIsWinningCombination = jest.fn(() => true);
+        SlotMachine.prototype._isWinningCombination = mockIsWinningCombination;
+        const machine = new SlotMachine();
+        machine.play();
+
+        expect(console.log).toHaveBeenCalledWith('Congratulations! You won 1 coins!');
+        expect(machine.coins).toBe(0);
+    })
 })
