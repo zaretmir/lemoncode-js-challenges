@@ -4,7 +4,7 @@ class SlotMachine {
     }
 
     play() {
-        // TBI
+        this.coins++;
     }
 }
 
